@@ -10,9 +10,9 @@
 
 // Pseudocode:
 function findMultiples(num, limit) {
-    let arr = []
-for (let i = num ; i <= limit ; i += num) {
-    arr.push(i)
-}
-    return arr
+  const arr = [];
+  for (let i = num; i <= limit; i += num) {
+    arr.push(i);
+  }
+  return arr;
 }

@@ -14,17 +14,12 @@
 function divisors(num) {
   if (num <= 3) {
     return `${num} is prime`;
-  } else {
-    let divs = [];
-    for (let i = 2; i < num; i++) {
-      if (num % i === 0) {
-        divs.push(i);
-      }
-    }
-    return divs.length ? divs : `${num} is prime`;
   }
+  const divs = [];
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      divs.push(i);
+    }
+  }
+  return divs.length ? divs : `${num} is prime`;
 }
-
-console.log(divisors(12));
-console.log(divisors(25));
-console.log(divisors(13));

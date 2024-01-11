@@ -10,22 +10,20 @@
 // Examples:
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
-
-
 // Pseudocode:
 function countPositivesSumNegatives(arr) {
-if (Array.isArray(arr) && arr.length > 0) {
-    let posIndex = 0
-    let negSum = 0
-arr.map(item => {
-    if (item < 0) {
-        negSum += item
-    } else if (item > 0) {
-        ++posIndex
-    }
-})
-return [posIndex , negSum]
-} else {
-    return []
-}
+  if (Array.isArray(arr) && arr.length > 0) {
+    let posIndex = 0;
+    let negSum = 0;
+    arr.map((item) => {
+      if (item < 0) {
+        negSum += item;
+      } else if (item > 0) {
+        ++posIndex;
+      }
+      return null; // Add a return statement here
+    });
+    return [posIndex, negSum];
+  }
+  return [];
 }
