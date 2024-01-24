@@ -13,6 +13,7 @@ const test2 = [1, 1, 2];
 // expected '2'
 
 // Pseudocode:
+// eslint-disable-next-line consistent-return
 function findOdd(array) {
   const numbers = [...new Set(array)];
   const countObj = {};
@@ -24,6 +25,7 @@ function findOdd(array) {
     countObj[item] += 1;
     return item;
   });
+  // eslint-disable-next-line no-restricted-syntax, prefer-const
   for (let num in countObj) {
     if (countObj[num] % 2 !== 0) {
       return Number(num);
