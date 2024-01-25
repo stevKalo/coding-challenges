@@ -20,6 +20,7 @@ function countSmileys(arr) {
     mouths: [')', 'D'],
   };
   let count = 0;
+  // eslint-disable-next-line array-callback-return
   arr.map((item) => {
     if (item.length === 2) {
       if (
