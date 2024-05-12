@@ -3,9 +3,9 @@
 // The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer, represented as an empty string (in C the space character is used).
 // If the score < 0, return 0.
 
-// Parameters:
+// Parameters: answer key array / student answer array
 
-// Return:
+// Return: student's test score
 
 // Examples:
 //     Correct answer    |    Student's answer   |   Result
